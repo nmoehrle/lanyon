@@ -1,8 +1,5 @@
 # Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
 
 # Setup
 title:            'Dear Future Self'
@@ -15,7 +12,10 @@ author:
   name:           'Nils Moehrle'
   url:            ''
 
+# Pagination
+gems: [jekyll-paginate]
 paginate:         5
+paginate_path:    'page:num'
 
 # Custom vars
 version:          1.0.0
